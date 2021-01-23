@@ -1,0 +1,107 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+
+body {
+  margin: 0px;
+  background-color: rgb(20, 20, 20);
+  color: white;
+  font-family: "Roboto", sans-serif;
+}
+
+.quiz-p {
+  text-align: center;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  position: absolute;
+}
+
+#score {
+  margin-top: 70px;
+}
+p.qst-g,
+.result {
+  margin-left: 20px;
+}
+
+.qst-container {
+  overflow: hidden;
+}
+
+.qst {
+  text-align: center;
+  margin-top: 3rem;
+}
+
+.opt-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 2rem;
+}
+
+#i,
+#y,
+#e,
+#g {
+  width: 60%;
+  margin: 4px;
+  padding: 20px;
+}
+
+#start-btn {
+  padding: 10px;
+}
+
+.next-btn {
+  float: right;
+  margin: 20px;
+  padding: 10px 20px;
+}
+
+.btn {
+  border: 1px solid rgb(137, 139, 139);
+  border-radius: 0.25rem;
+  background-color: rgba(219, 212, 212, 0.288);
+  color: white;
+  font-family: "Roboto", sans-serif;
+  font-size: 14px;
+}
+
+@media screen and (min-width: 700px) {
+  .opt-container {
+    display: grid;
+    grid-template-columns: repeat(2, 50vw);
+    justify-items: center;
+  }
+  #i,
+  #y,
+  #e,
+  #g {
+    margin: 8px;
+  }
+  .btn:hover {
+    cursor: pointer;
+    border-color: rgb(255, 251, 0);
+  }
+}
+
+.correct {
+  background-color: rgb(243, 239, 17);
+  border: 1px solid rgb(172, 172, 172);
+  color: white;
+}
+
+.wrong {
+  background-color: rgba(201, 10, 10, 0.63);
+  border: 1px solid red;
+  color: white;
+}
+
+.hide {
+  display: none;
+}
+
+.invalid {
+  pointer-events: none;
+}

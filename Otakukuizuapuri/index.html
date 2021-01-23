@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge,chrome=1">
+    <title>Otakukuizuapuri</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <script defer type="text/javascript" src="script.js"></script>
+</head>
+
+<body>
+    <!--first page-->
+    <div id="quiz-fp" class="quiz-p">
+        <h2>Welcome to the Otaku Quiz App</h2>
+        <p>How geeky are you? </p>
+        <button id="start-btn" class="btn">Click to start</button>
+    </div>
+    <!--end of first page-->
+    <!--quiz start-->
+    <div id="qst-cont" class="qst-container hide">
+        <p id="score" class="result">Your Score: 0/9</p>
+        <h2 id="qsts" class="qst">Questions</h2>
+        <div id="opt-cont" class="opt-container">
+            <button class="btn" id="i" onclick="checkAnswer(this)">1</button>
+            <button class="btn" id="y" onclick="checkAnswer(this)">2</button>
+            <button class="btn" id="e" onclick="checkAnswer(this)">3</button>
+            <button class="btn" id="g" onclick="checkAnswer(this)">4</button>
+        </div>
+        <button id="nxt-btn" class="next-btn btn">Next</button>
+    </div>
+    <!--quiz end-->
+    <!--quiz result-->
+    <div id="quiz-lp" class="quiz-p hide">
+        <h2>you did well Redi Nonye, Arigatōgozaimashita!</h2>
+        <p class="result">Your Score: 0/9</p>
+        <p>Use the letters IYEG to solve the next riddle</p>
+        <button id="start-btn" class="btn">There are four words. The first has 4 letters, and the others 3, 2 and 10
+            accordingly <br>
+            I appears in 2 words, Y in one, E in two and G once <br>
+            <em>Hint</em> <br>
+            Use the dowloaded file to complete the riddle, then replace "and" with "my" to get your question. <br>
+            <a href="crossWord.png" download>Download file here</a>
+        </button>
+
+    </div>
+</body>
+
+</html>
